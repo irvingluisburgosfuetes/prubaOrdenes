@@ -41,6 +41,12 @@ public class OrdenesController {
 	
 	@GetMapping
 	public List<OrdenListDto> listar(){
+		String[] semana = {"LUNES","MARTES","MIERCOLES"};
+		
+		for(String dia : semana) {
+			System.out.println("Hoy es " + dia);
+		}
+		
 		return ordenService.listar();
 	}
 	

@@ -57,7 +57,7 @@ public class ProductosController {
 	public Map<String,String> eliminar(@RequestParam(name ="id")Long id){
 		productoService.eliminar(id);
 		Map<String,String> respuesta = new HashMap<>();
-		respuesta.put("msg","Producto eliminada correctamente");
+		respuesta.put("msg","Producto eliminado correctamente");
 		return respuesta;
 	}
 	
